@@ -96,7 +96,7 @@ The simplest way to run this sample in Teams is to use Teams Toolkit for Visual 
 ‼️Note : Before provisioning, navigate to `src/searchApp.js` and change `tableName` into `storageTableName` which corresponds to `.localConfigs`.
 <img width="1128" alt="table name error" src="https://github.com/user-attachments/assets/0a444ab6-4e0c-45f5-a13c-49d45287ff8a">
 
-‼️Note : When provisioning, if `botAadApp/create.MissingServiceManagementReference` occurs, please create the Microsoft Entra App manually. After that add `BOT_ID` in `env/.env.local` and `SECRET_BOT_PASSWORD` in `env/.env.local.user`.
+‼️Note : When provisioning, if `botAadApp/create.MissingServiceManagementReference` occurs, please create the Microsoft Entra App in App registrations manually. After that add `BOT_ID` in `env/.env.local` and `SECRET_BOT_PASSWORD` in `env/.env.local.user`.
 ![botAadAppcreate MissingServiceManagementReference](https://github.com/user-attachments/assets/09961317-5051-4ce3-ad96-e9cc19efcc80)
 
 ‼️Note : When provisioning, if an error related to `teamsApp/validateManifest` occurs, you can check out `appPackage/manifest.json` to see if a comma is missing between `validDomains` and `webApplicationInfo`.
