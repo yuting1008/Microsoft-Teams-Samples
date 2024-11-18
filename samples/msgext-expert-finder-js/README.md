@@ -16,7 +16,7 @@ urlFragment: officedev-microsoft-teams-samples-msgext-expert-finder-js
 
 This sample demonstrates a Teams message extension integrated with Microsoft Copilot, enabling users to efficiently search a database of candidates based on their skills, location, and availability. The extension features Single Sign-On (SSO) for enhanced user experience and authentication.
 
-
+> Compared to the [original repository](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/msgext-expert-finder-js), I have added several notes to this repository for debugging. For easier identification, my notes will be prefixed with the emoji‼️.
 ## Interaction with app
 
 Using this messaging extension sample, we demonstrate two capabilities of Copilot for M365:
@@ -65,6 +65,7 @@ Please find below demo manifest which is deployed on Microsoft Azure and you can
       AZURE_TABLE_STORAGE_CONNECTION_STRING=<azure storage account connection string> (Created in step 1)
       AZURE_TABLE_TABLE_NAME=<azure table name> (Created in step 2)
    ```
+   ‼️Note : Remember to use single quotation marks when updating thise values. For example, ```AZURE_TABLE_TABLE_NAME='smapleTable'```.
 
 ## Setup resources (Using Teams Toolkit for Visual Studio Code)
 
