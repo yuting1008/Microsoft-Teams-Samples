@@ -77,7 +77,15 @@ The simplest way to run this sample in Teams is to use Teams Toolkit for Visual 
 1. Install the [Teams Toolkit extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
 1. Select **File > Open Folder** in VS Code and choose this samples directory from the repo
 1. Using the extension, sign in with your Microsoft 365 account where you have permissions to upload custom apps
-1. Select **Debug > Start Debugging** or **F5** to run the app in a Teams web client.
+1. Select **Debug > Start Debugging** or **F5** to run the app in a Teams web client. \
+   <img src="https://github.com/user-attachments/assets/a709732e-34e7-4654-963b-d4335eb59e95" alt="Image description" width="400" height="300">
+
+‼️Note : When provisioning, if `botAadApp/create.MissingServiceManagementReference` occurs, please create the Microsoft Entra App manually. After that add `BOT_ID` in `.env.local` and `SECRET_BOT_PASSWORD` in `.env.local.user`.
+![botAadAppcreate MissingServiceManagementReference](https://github.com/user-attachments/assets/09961317-5051-4ce3-ad96-e9cc19efcc80)
+‼️Note : When provisioning, if an error related to `teamsApp/validateManifest` occurs, you can check out `manifest.json` to see if a comma is missing.
+![manifest error](https://github.com/user-attachments/assets/07faf33f-0f98-45c4-9c11-67cdb9f38c86)
+
+
 
 ## Setup SSO for Expert finder.
 1) Go to app registrations in azure portal and search for the app registration created by toolkit automatically. You will get the resource suffix inside `samples/msgext-expert-finder-js/env/.env.local` with key as `APP_NAME_SUFFIX`. This resource suffix should be used to search the created azure resources. For eg you can search the app registration with name like `expert-finder-local` 
@@ -96,21 +104,21 @@ The simplest way to run this sample in Teams is to use Teams Toolkit for Visual 
 
    - Click "_Add a scope_"
 
-        - access_as_user as the Scope name.
+        - "_access_as_user_" as the Scope name.
 
-        - Set Who can consent? to Admins and users
+        - Set Who can consent? to "_Admins and users_"
 
         - Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope. Suggestions:
 
-            - Admin consent display name: Teams can access the user’s profile
+            - Admin consent display name: _Teams can access the user’s profile_
 
-            - Admin consent description: Allows Teams to call the app’s web APIs as the current user.
+            - Admin consent description: _Allows Teams to call the app’s web APIs as the current user._
 
-            - User consent display name: Teams can access your user profile and make requests on your behalf
+            - User consent display name: _Teams can access your user profile and make requests on your behalf_
 
-            - User consent description: Enable Teams to call this app’s APIs with the same rights that you have
+            - User consent description: _Enable Teams to call this app’s APIs with the same rights that you have_
 
-        - Ensure that State is set to Enabled
+        - Ensure that State is set to _Enabled_
 
         - Click on Add scope button (Note: The domain part of the Scope name displayed just below the text field should automatically match the Application ID URI set in the previous step, with /access_as_user appended to the end)
 
