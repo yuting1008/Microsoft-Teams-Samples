@@ -141,7 +141,9 @@ The app registrations in azure portal and search for the app registration will b
 
 ### Setup Azure Bot Service Connection (TokenStore)
 Azure bot will be created automatically in the selected subscription and resource group while running the sample using Toolkit. \
-‼️Note : If the Azure bot isn't created automactically, please go to the [Bot portal](https://dev.botframework.com) > My bots page and click the "migrate" button.
+‼️Note : If the Azure bot isn't created automactically, please go to the [Bot portal](https://dev.botframework.com) > My bots page. Choose the bot you create and click the "migrate" button.
+![migrate bot](https://github.com/user-attachments/assets/dce18988-91af-4c37-9f82-3d8d338c5904)
+
 
 1. In the Azure Portal, go to the resource group selected while running the sample using toolkit and navigate to the Azure Bot resource
 2. Switch to Settings and Configuration section and click on `Add OAuth Connection Settings`
