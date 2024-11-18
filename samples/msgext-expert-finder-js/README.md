@@ -65,7 +65,7 @@ Please find below demo manifest which is deployed on Microsoft Azure and you can
       AZURE_TABLE_STORAGE_CONNECTION_STRING=<azure storage account connection string> (Created in step 1)
       AZURE_TABLE_TABLE_NAME=<azure table name> (Created in step 2)
    ```
-   ‼️Note : Remember to use single quotation marks when updating thise values. For example, ```AZURE_TABLE_TABLE_NAME='smapleTable'```.
+‼️Note : Remember to update the values in `.localConfigs` with single quotation marks. For example, ```AZURE_TABLE_TABLE_NAME='sampleTable'```.
 
 ## Setup resources (Using Teams Toolkit for Visual Studio Code)
 
