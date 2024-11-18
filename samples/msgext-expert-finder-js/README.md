@@ -82,7 +82,7 @@ The simplest way to run this sample in Teams is to use Teams Toolkit for Visual 
 
 ‼️Note : When provisioning, if `botAadApp/create.MissingServiceManagementReference` occurs, please create the Microsoft Entra App manually. After that add `BOT_ID` in `.env.local` and `SECRET_BOT_PASSWORD` in `.env.local.user`.
 ![botAadAppcreate MissingServiceManagementReference](https://github.com/user-attachments/assets/09961317-5051-4ce3-ad96-e9cc19efcc80)
-‼️Note : When provisioning, if an error related to `teamsApp/validateManifest` occurs, you can check out `manifest.json` to see if a comma is missing.
+‼️Note : When provisioning, if an error related to `teamsApp/validateManifest` occurs, you can check out `manifest.json` to see if a comma is missing between `validDomains` and `webApplicationInfo`.
 ![manifest error](https://github.com/user-attachments/assets/07faf33f-0f98-45c4-9c11-67cdb9f38c86)
 
 
