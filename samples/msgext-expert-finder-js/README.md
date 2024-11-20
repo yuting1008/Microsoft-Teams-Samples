@@ -90,9 +90,8 @@ The simplest way to run this sample in Teams is to use Teams Toolkit for Visual 
 1. Install the [Teams Toolkit extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
 1. Select **File > Open Folder** in VS Code and choose this samples directory from the repo
 1. Using the extension, sign in with your Microsoft 365 account where you have permissions to upload custom apps
-
-‼️Note : Navigate to `src/searchApp.js` and change `tableName` into `storageTableName` which corresponds to `.localConfigs`.
-<img width="1128" alt="table name error" src="https://github.com/user-attachments/assets/0a444ab6-4e0c-45f5-a13c-49d45287ff8a">
+1. ‼️Note : Navigate to `src/searchApp.js` and change `tableName` into `storageTableName` which corresponds to `.localConfigs`.
+   <img width="1128" alt="table name error" src="https://github.com/user-attachments/assets/0a444ab6-4e0c-45f5-a13c-49d45287ff8a">
 1. Select **Debug > Start Debugging** or **F5** to run the app in a Teams web client. \
    <img src="https://github.com/user-attachments/assets/a709732e-34e7-4654-963b-d4335eb59e95" alt="Image description" width="400" height="300">
 
